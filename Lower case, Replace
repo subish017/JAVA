@@ -1,0 +1,23 @@
+public class Main
+{
+    public static void main(String[] args)
+    {
+        String a = "siva subish";
+
+        String c = a.toLowerCase();
+        System.out.println(c);
+
+        String d = a.replace("siva subish", "sivasubishsivasenthil");
+        System.out.println(d);
+
+        int e = a.indexOf("s");
+        System.out.println(e);
+
+        String[] f = a.split(" ");
+
+        for (String x : f)
+        {
+            System.out.println(x);
+        }
+    }
+}
