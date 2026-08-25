@@ -1,0 +1,27 @@
+public class Main
+{
+    public static int welcome(int a,int b)
+    {
+        int B = Math.max(a,b);
+        int S = Math.min(a,b);
+        int s = B;
+        
+        while(true)
+        {
+            if (B % S== 0)
+            break;
+            B = B + s;
+        }
+        return B;
+    }
+    public static void main(String []args)
+    {
+        int []a={8,10,4,15,12,18,28};
+        int lcm=a[0];
+        for(int i=1;i<7;i++)
+        {
+            lcm = welcome(lcm, a[i]);
+        }
+        System.out.println("The lcm is: "+lcm);
+    }
+}
